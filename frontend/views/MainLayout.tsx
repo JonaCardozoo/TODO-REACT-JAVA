@@ -4,12 +4,13 @@ import { useRouteMetadata } from 'Frontend/util/routing.js';
 import { Suspense, useEffect } from 'react';
 import { NavLink, Outlet } from 'react-router-dom';
 
-const navLinkClasses = ({ isActive }: any) => {
+const navLinkClasses = ({ isActive }: { isActive: boolean }) => {
   return `block rounded-m p-s ${isActive ? 'bg-primary-10 text-primary' : 'text-body'}`;
 };
 
 export default function MainLayout() {
   const currentTitle = useRouteMetadata()?.title ?? 'My App';
+
   useEffect(() => {
     document.title = currentTitle;
   }, [currentTitle]);
@@ -22,6 +23,9 @@ export default function MainLayout() {
           <nav>
             <NavLink className={navLinkClasses} to="/">
               Hello World
+            </NavLink>
+            <NavLink className={navLinkClasses} to="/todo">
+              Todo
             </NavLink>
             <NavLink className={navLinkClasses} to="/about">
               About

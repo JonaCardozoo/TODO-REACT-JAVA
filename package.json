@@ -24,6 +24,7 @@
     "@vaadin/router": "1.7.5",
     "classnames": "^2.3.2",
     "construct-style-sheets-polyfill": "3.1.0",
+    "formik": "^2.4.6",
     "lit": "3.1.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -75,7 +76,8 @@
     "@hilla/generator-typescript-plugin-subtypes": "$@hilla/generator-typescript-plugin-subtypes",
     "@hilla/react-crud": "$@hilla/react-crud",
     "@hilla/generator-typescript-plugin-backbone": "$@hilla/generator-typescript-plugin-backbone",
-    "@hilla/generator-typescript-cli": "$@hilla/generator-typescript-cli"
+    "@hilla/generator-typescript-cli": "$@hilla/generator-typescript-cli",
+    "formik": "$formik"
   },
   "vaadin": {
     "dependencies": {
@@ -119,6 +121,6 @@
       "workbox-core": "7.0.0",
       "workbox-precaching": "7.0.0"
     },
-    "hash": "f5434ac024f73dbe8b84e89785c56733a3040983f15b93a1cfe01e73329677d0"
+    "hash": "8f1c17d991231069429e8b9164176bcd829f1fd4cc258bcf42ef00d3129971c5"
   }
 }
