@@ -19,10 +19,10 @@ export default function MainLayout() {
     <AppLayout primarySection="drawer">
       <div slot="drawer" className="flex flex-col justify-between h-full p-m">
         <header className="flex flex-col gap-m">
-          <span className="font-semibold text-l">My App</span>
+          <span className="font-semibold text-l">Mi aplicacion</span>
           <nav>
             <NavLink className={navLinkClasses} to="/">
-              Hello World
+              Hola mundo
             </NavLink>
             <NavLink className={navLinkClasses} to="/todo">
               Todo
@@ -33,7 +33,7 @@ export default function MainLayout() {
           </nav>
         </header>
       </div>
-
+    
       <DrawerToggle slot="navbar" aria-label="Menu toggle"></DrawerToggle>
       <h1 slot="navbar" className="text-l m-0">
         {currentTitle}

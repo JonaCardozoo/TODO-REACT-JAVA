@@ -4,7 +4,7 @@ import { Button } from '@hilla/react-components/Button.js';
 import { Checkbox } from '@hilla/react-components/Checkbox.js';
 import { TextField } from '@hilla/react-components/TextField.js';
 import { FormikErrors, useFormik } from 'formik';
-import Todo from 'frontend/generated/com/todo';
+import Todo from 'generated/com/example/application/model/Todo';
 import { TodoEndpoint } from 'Frontend/generated/endpoints';
 import { useEffect, useState } from 'react';
 
