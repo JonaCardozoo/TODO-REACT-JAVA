@@ -75,12 +75,21 @@ export default function TodoView() {
           onChange={createForm.handleChange}
           onBlur={createForm.handleChange}
         />
+        <TextField 
+          name="description"
+          label="Description"
+          value={createForm.values.description}
+          onChange={createForm.handleChange}
+          onBlur={createForm.handleChange}
+            />
+        
         <Button theme="primary" disabled={createForm.isSubmitting} onClick={createForm.submitForm}>
           Add
         </Button>
+        
       </div>
 
-      <div className="m-m flex flex-col items-stretch gap-s">
+      <div className="m-m flex flex-col items-stretch ">
         {todos.map((todo) => (
           <div key={todo.id}>
             <Checkbox
@@ -93,8 +102,16 @@ export default function TodoView() {
               value={todo.task}
               onBlur={(e: any) => updateTask(todo, e.target.value)}
             />
+            <TextField
+              name="description"
+              value={todo.description}
+              onBlur={(e: any) => updateTask(todo, e.target.value)}
+            />
             <Button onClick={() => deleteTodo(todo)}>X</Button>
+            
           </div>
+          
+          
         ))}
       </div>
     </>

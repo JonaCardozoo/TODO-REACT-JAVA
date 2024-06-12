@@ -45,7 +45,7 @@
     "strip-css-comments": "5.0.0",
     "transform-ast": "2.4.4",
     "typescript": "5.3.3",
-    "vite": "5.1.1",
+    "vite": "^5.2.13",
     "vite-plugin-checker": "0.6.4",
     "workbox-build": "7.0.0",
     "workbox-core": "7.0.0",
@@ -121,6 +121,6 @@
       "workbox-core": "7.0.0",
       "workbox-precaching": "7.0.0"
     },
-    "hash": "8f1c17d991231069429e8b9164176bcd829f1fd4cc258bcf42ef00d3129971c5"
+    "hash": "b51ffa47ab7717d29cd853b094d4ebba643116869119171054e7a5aaa4f58ef6"
   }
 }

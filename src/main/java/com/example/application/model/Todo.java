@@ -17,6 +17,10 @@ public class Todo {
   @GeneratedValue
   private Integer id;
 
+  @Getter
+  @Setter
+  private String description;
+
   @Setter
   @Getter
   private boolean done = false;
